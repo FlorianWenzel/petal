@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Deps
+node_modules
+.pnp
+.pnp.js
+
+# Builds
+dist
+dist-ssr
+.output
+.nuxt
+.nitro
+.cache
+build
+
+# Local
+*.local
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.swp
+
+# Docker / runtime
+pgdata
+caddy_data
+caddy_config

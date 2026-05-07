@@ -1,0 +1,20 @@
+{
+  "name": "petal",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:api": "cd apps/api && go run .",
+    "build:web": "npm run build --workspace=apps/web",
+    "build:api": "cd apps/api && go build -o bin/petal-api .",
+    "compose:up": "docker compose up -d",
+    "compose:down": "docker compose down",
+    "compose:logs": "docker compose logs -f"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
